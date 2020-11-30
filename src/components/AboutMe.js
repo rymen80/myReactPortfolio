@@ -3,18 +3,26 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper';
 
-import Image from '../images/aboutMe.jpeg';
+import Image from '../images/aboutMe.jpg';
 
 const styles = {
     paperContainer: {
-        height: 800,
+        height: '100vh',
         backgroundImage: `url(${Image})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        width: `calc(100vw + 48px)`,
+        width: '100vw',
         margin: -24,
         padding: 24,
+        color: 'white',
+        fontWeight: 'bold',
+        fontSize: '24px',
+
     }
+
+
+
+
 };
 
 
