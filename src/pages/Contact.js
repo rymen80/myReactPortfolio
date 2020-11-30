@@ -4,6 +4,7 @@ import React from 'react';
 
 
 class Contact extends React.Component {
+
     render() {
         return <h1>Hello, {this.props.name}</h1>;
     }

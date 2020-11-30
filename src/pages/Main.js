@@ -1,10 +1,14 @@
 import React from 'react';
+import AboutMe from '../components/AboutMe';
 
 
 class Main extends React.Component {
     render() {
-        return <h1>Hello, {this.props.name}</h1>;
+        return <AboutMe />;
     }
 }
 
 export default Main
+
+
+

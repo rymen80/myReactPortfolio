@@ -1,16 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import logo from './logo.svg';
-// import './App.css';
 import Navbar from "./components/Navbar"
-import Main from './components/Main';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Main from './pages/Main';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 
 function App() {
   return (
       <Router>
         <Navbar/>
+        <Route path='/'> {' '} <Main /> </Route>
         <Route path='/Main' component={Main}/>
         <Route path='/Portfolio' component={Portfolio}/>
         <Route path="/Contact" component={Contact}/>
