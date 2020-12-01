@@ -9,7 +9,7 @@ function App() {
   return (
       <Router>
         <Navbar/>
-        <Route path='/'> {' '} <Main /> </Route>
+        <Route path='/' component={Main}/>
         <Route path='/Main' component={Main}/>
         <Route path='/Portfolio' component={Portfolio}/>
         <Route path="/Contact" component={Contact}/>
