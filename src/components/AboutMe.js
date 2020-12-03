@@ -17,7 +17,7 @@ const styles = {
         color: 'white',
         fontWeight: 'bold',
         fontSize: '24px',
-        // fontshadow: ,
+
 
     }
 
