@@ -12,7 +12,10 @@ import Grid from '@material-ui/core/Grid';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 
-import Image from "../images/nightIn.png";
+import nightinImage from "../images/nightIn.png";
+import issUseImage from "../images/issUse.png"
+import ironDojoImage from "../images/ironDojo.png"
+
 import BgImage from '../images/keyboard.jpeg'
 
 
@@ -25,11 +28,14 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: theme.palette.text.secondary,
       },
+      media: {
+          height: 180,
+      }
     }));
 
 const styles = {
     paperContainer: {
-        height: '100vh',
+        height: '180vh',
         backgroundImage: `url(${BgImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -58,7 +64,7 @@ export default function PortfolioCard() {
                                     <CardActionArea>
                                         <CardMedia
                                             className={classes.media}
-                                            image={Image}
+                                            image={nightinImage}
                                             title="NightIn App"
                                         />
                                         <CardContent>
@@ -89,15 +95,15 @@ export default function PortfolioCard() {
                                     <CardActionArea>
                                         <CardMedia
                                             className={classes.media}
-                                            image={Image}
-                                            title="NightIn App"
+                                            image={issUseImage}
+                                            title="Issues App"
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">
-                                                night in
+                                                issUse
                                             </Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                Simplify your night with night in.
+                                               Issues"?! No Issues with issUse©
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
@@ -120,15 +126,15 @@ export default function PortfolioCard() {
                                     <CardActionArea>
                                         <CardMedia
                                             className={classes.media}
-                                            image={Image}
-                                            title="NightIn App"
+                                            image={ironDojoImage}
+                                            title="ironDojo App"
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">
-                                                night in
+                                                Iron Dolo
                                             </Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
-                                                Simplify your night with night in.
+                                                Welcome to the Iron Dojo
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
