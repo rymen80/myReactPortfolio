@@ -17,20 +17,15 @@ import BgImage from '../images/keyboard.jpeg'
 
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        maxWidth: 345,
+     root: {
         flexGrow: 1,
-    },
-    media: {
-        height: 140,
-    },
-    paper: {
+      },
+      paper: {
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.secondary,
-    },
-
-}));
+      },
+    }));
 
 const styles = {
     paperContainer: {
@@ -44,20 +39,20 @@ const styles = {
 
     }
 
-
 };
 
 
 export default function PortfolioCard() {
     const classes = useStyles();
-
+    
+    
     return (
-        <paper style={styles.paperContainer}>
+        <Paper style={styles.paperContainer}>
             <React.Fragment>
                 <Container maxWidth="sm">
                     <CssBaseline/>
                     <div className={classes.root}>
-                        <Grid container spacing={4}>
+                        <Grid container spacing={3}>
                             <Grid item xs>
                                 <Paper className={classes.paper}><Card className={classes.root}>
                                     <CardActionArea>
@@ -88,8 +83,8 @@ export default function PortfolioCard() {
                                 </Paper>
                             </Grid>
                         </Grid>
-                        <Grid container spacing={4}>
-                            <Grid item xs>
+                        <Grid container spacing={3}>
+                            <Grid item xs={12}>
                                 <Paper className={classes.paper}><Card className={classes.root}>
                                     <CardActionArea>
                                         <CardMedia
@@ -119,8 +114,8 @@ export default function PortfolioCard() {
                                 </Paper>
                             </Grid>
                         </Grid>
-                        <Grid container spacing={4}>
-                            <Grid item xs>
+                        <Grid container spacing={3}>
+                            <Grid item xs={12}>
                                 <Paper className={classes.paper}><Card className={classes.root}>
                                     <CardActionArea>
                                         <CardMedia
@@ -150,8 +145,8 @@ export default function PortfolioCard() {
                                 </Paper>
                             </Grid>
                         </Grid>
-                        <Grid container spacing={4}>
-                            <Grid item xs>
+                        <Grid container spacing={3}>
+                            <Grid item xs={12}>
                                 <Paper className={classes.paper}><Card className={classes.root}>
                                     <CardActionArea>
                                         <CardMedia
@@ -184,7 +179,7 @@ export default function PortfolioCard() {
                     </div>
                 </Container>
             </React.Fragment>
-        </paper>
+        </Paper>
     );
 }
 

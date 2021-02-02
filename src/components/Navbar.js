@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar } from "@material-ui/core"
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
+import Box from '@material-ui/core/Box'
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -15,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
     },
+    p: {
+        marginLeft: 'auto',
+    }
 }));
 
 
@@ -26,6 +31,7 @@ export default function ButtonAppBar() {
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
+                    <Box display= 'flex' flexGrow={1}>
                     <Button
                         component={Link}
                         to='/'
@@ -43,8 +49,11 @@ export default function ButtonAppBar() {
                         color="inherit">
                         Contact
                     </Button>
+                    </Box>
+                    <div>Ryan Mendez</div>
 
                  </Toolbar>
+                 
             </AppBar>
         </div>
     );
