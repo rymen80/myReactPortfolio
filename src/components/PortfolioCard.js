@@ -16,7 +16,9 @@ import nightinImage from "../images/nightIn.png";
 import issUseImage from "../images/issUse.png"
 import ironDojoImage from "../images/ironDojo.png"
 
-import BgImage from '../images/keyboard.jpeg'
+import BgImage from '../images/keyboard.jpeg';
+
+import { link } from 'react-router-dom';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -39,7 +41,7 @@ const styles = {
         backgroundImage: `url(${BgImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        width: '100vw',
+        width: "calc(100vw + 48px)",
         margin: -24,
         padding: 24,
 
@@ -71,17 +73,17 @@ export default function PortfolioCard() {
                                             <Typography gutterBottom variant="h5" component="h2">
                                                 night in
                                             </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
+                                            <Typography gutterBottom variant="h5" component="h2">
                                                 Simplify your night with night in.
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" color="primary">
-                                            Share
+                                        <Button size="small" color="primary" href='https://tuanasaurus.github.io/groupProject1DinnerMovie/'>
+                                            Check It Out
                                         </Button>
-                                        <Button size="small" color="primary">
-                                            Learn More
+                                        <Button size="small" color="primary" href='https://github.com/tuanasaurus/groupProject1DinnerMovie.git'>
+                                            code
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -102,17 +104,17 @@ export default function PortfolioCard() {
                                             <Typography gutterBottom variant="h5" component="h2">
                                                 issUse
                                             </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
+                                            <Typography gutterBottom variant="h5" component="h2">
                                                Issues"?! No Issues with issUse©
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" color="primary">
-                                            Share
+                                        <Button size="small" color="primary" href='https://iss-use.herokuapp.com/'>
+                                            Check it out
                                         </Button>
-                                        <Button size="small" color="primary">
-                                            Learn More
+                                        <Button size="small" color="primary" href='https://github.com/rymen80/issueManager.git'>
+                                            code
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -131,50 +133,19 @@ export default function PortfolioCard() {
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">
-                                                Iron Dolo
+                                                Iron Dojo
                                             </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
+                                            <Typography gutterBottom variant="h5" component="h2">
                                                 Welcome to the Iron Dojo
                                             </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                     <CardActions>
-                                        <Button size="small" color="primary">
-                                            Share
+                                        <Button size="small" color="primary" href='https://iron-dojo.herokuapp.com/' >
+                                            Check it out
                                         </Button>
-                                        <Button size="small" color="primary">
-                                            Learn More
-                                        </Button>
-                                    </CardActions>
-                                </Card>
-
-                                </Paper>
-                            </Grid>
-                        </Grid>
-                        <Grid container spacing={3}>
-                            <Grid item xs={12}>
-                                <Paper className={classes.paper}><Card className={classes.root}>
-                                    <CardActionArea>
-                                        <CardMedia
-                                            className={classes.media}
-                                            image={Image}
-                                            title="NightIn App"
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">
-                                                night in
-                                            </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                Simplify your night with night in.
-                                            </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                    <CardActions>
-                                        <Button size="small" color="primary">
-                                            Share
-                                        </Button>
-                                        <Button size="small" color="primary">
-                                            Learn More
+                                        <Button size="small" color="primary" href='https://github.com/rpdurk/TheIronDojo-Mongo-.git'>
+                                            code
                                         </Button>
                                     </CardActions>
                                 </Card>
@@ -182,6 +153,7 @@ export default function PortfolioCard() {
                                 </Paper>
                             </Grid>
                         </Grid>
+                        
                     </div>
                 </Container>
             </React.Fragment>

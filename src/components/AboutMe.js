@@ -11,10 +11,10 @@ const styles = {
     backgroundImage: `url(${Image})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    width: "100vw",
+    width: "calc(100vw + 48px)",
     margin: -24,
     padding: 24,
-    fontSize: "20px",
+    fontSize: "15px",
   },
   
 };

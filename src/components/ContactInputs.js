@@ -11,6 +11,7 @@ import {
 import MuiAlert from '@material-ui/lab/Alert';
 import emailjs from 'emailjs-com';
 import { EmailRounded, GitHub, LinkedIn } from '@material-ui/icons';
+import contactImage from '../images/contact.jpg';
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="outlined" {...props} />;
@@ -20,6 +21,7 @@ const useStyles = makeStyles(theme => ({
   container: {
     textAlign: 'center',
     marginTop: theme.spacing(10),
+    backgroundColor: 'primary'
   },
   messages: {
     display: 'flex',
@@ -45,6 +47,18 @@ const useStyles = makeStyles(theme => ({
   },
   
 }));
+const styles = {
+  paperContainer: {
+    height: "100vh",
+    backgroundImage: `url(${contactImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    width: "calc(100vw + 48px)",
+    margin: -24,
+    padding: 24,
+  },
+  
+};
 
 export default function ContactInputs () {
   const classes = useStyles();
@@ -83,6 +97,7 @@ export default function ContactInputs () {
       );
   }
   return (
+    <Paper style={styles.paperContainer}>
     <Container className={classes.container}>
       <Paper>
         <Typography className={classes.title}>
@@ -173,5 +188,6 @@ export default function ContactInputs () {
         </form>
       </Paper>
     </Container>
+    </Paper>
   );
 };
