@@ -14,7 +14,7 @@ import MeImage from "../images/mePic1.jpeg";
 const useStyles = makeStyles({
   root: {
     maxWidth: 455,
-    height: "45vw",
+    height: "40vw",
   },
 });
 
@@ -26,10 +26,10 @@ export default function AboutMeCard() {
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Contemplative Reptile"
+          alt="Ryan Mendez"
           height="320"
           image={MeImage}
-          title="Contemplative Reptile"
+          title="Ryan Mendez"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -48,6 +48,7 @@ export default function AboutMeCard() {
             gutterBottom
             variant="body1"
             color="textPrimary"
+            align="center"
             component="h2"
           >
             Javascript | React | Redux | Node.js | Express | MongoDB | MySQL
@@ -56,6 +57,7 @@ export default function AboutMeCard() {
       </CardActionArea>
       <IconButton
         component={LinkedInIcon}
+        align="center"
         fontSize="large"
         color="primary"
         onClick={() =>
@@ -67,6 +69,7 @@ export default function AboutMeCard() {
       />
       <IconButton
         component={GitHubIcon}
+        align="center"
         fontSize="large"
         color="primary"
         onClick={() => window.open("http://github.com/rymen80", "_blank")}

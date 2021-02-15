@@ -50,7 +50,12 @@ export default function ButtonAppBar() {
                         Contact
                     </Button>
                     <Button
-                        href='https://docs.google.com/document/d/161_RTzbJ5inNliLczFuJ6ZqMmCUpiR030Yrt32Gw83c/edit?usp=sharing'
+                        onClick={() =>
+                            window.open(
+                              "https://docs.google.com/document/d/161_RTzbJ5inNliLczFuJ6ZqMmCUpiR030Yrt32Gw83c/edit?usp=sharing",
+                              "_blank"
+                            )
+                        }
                         color="inherit">
                         Resume
                     </Button>
