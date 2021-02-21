@@ -49,6 +49,12 @@ export default function ButtonAppBar() {
                         color="inherit">
                         Contact
                     </Button>
+                    <Button
+                        to='/Contact'
+                        onClick={() => window.open("https://docs.google.com/document/d/161_RTzbJ5inNliLczFuJ6ZqMmCUpiR030Yrt32Gw83c/edit?usp=sharing", "_blank")}
+                        color="inherit">
+                        Resume
+                    </Button>
                     </Box>
                     <div>Ryan Mendez</div>
 

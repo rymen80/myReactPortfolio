@@ -18,9 +18,6 @@ import ironDojoImage from "../images/ironDojo.png"
 
 import BgImage from '../images/keyboard.jpeg';
 
-import { link } from 'react-router-dom';
-
-
 const useStyles = makeStyles((theme) => ({
      root: {
         flexGrow: 1,

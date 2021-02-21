@@ -57,7 +57,7 @@ export default function AboutMeCard() {
       </CardActionArea>
       <IconButton
         component={LinkedInIcon}
-        align="center"
+        align="left"
         fontSize="large"
         color="primary"
         onClick={() =>
